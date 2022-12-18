@@ -14,5 +14,7 @@ b = int(input("Position two: "))
 for i in range(-n, n + 1):
     numbers_list.append(i)
 print(numbers_list)
-res = numbers_list[a-1] * numbers_list[b-1]
+if a and b > n * 2 + 1:
+    print("There are no values for these positions!")
+res = numbers_list[a - 1] * numbers_list[b - 1]
 print(res)
